@@ -9,158 +9,369 @@ body {
    color: black;
    font-size: 25px;
 }
-.wrapper {
-   width: 100%;
-   display: flex;
-   flex-direction: column;
+
+@media screen and (min-width: 1000px) and (max-width: 1450px) {
+   /* body,
+   html {
+      padding: 0;
+      margin: 0;
+      box-sizing: border-box;
+      background-color: #c0c0c0;
+      width: 800px;
+      height: 100vh;
+      overflow-x: hidden;
+      touch-action: cross-slide-y;
+      color: black;
+      font-size: 15px;
+   }
+   .biography {
+      width: 800px;
+      display: flex;
+      align-items: center;
+   }
+   .menu {
+      display: flex;
+      width: 75px;
+   }
+   .header {
+      display: none;
+   }
+   .biography img:first-child {
+      width: 200px;
+      height: 250px;
+   }
+
+   .biography img {
+      width: 300px;
+      margin: 35px;
+      height: 250px;
+   }
+   .biography h1 {
+      line-height: 1;
+   }
+   .biography div {
+      margin: 0 0 0 0;
+      line-height: 1;
+      width: 50%;
+   }
+
+   .bar1 {
+      width: 800px;
+      height: 150px;
+      word-break: break-all;
+      position: relative;
+      left: -100%;
+      box-shadow: 0 0 7px 0 black;
+      display: flex;
+      color: white;
+      background-color: rgb(74, 77, 255);
+      transition: all 0.5s ease-in;
+   }
+   .bar1.active {
+      left: 0;
+      transition: all 1s ease-in;
+   }
+   .bar1 img {
+      height: 100%;
+      width: 200px;
+      margin-left: 35px;
+   }
+   .bar1 p {
+      width: 80%;
+      line-height: 2;
+      margin: 0 0 0 35px;
+   }
+   .bar2 {
+      width: 800px;
+      height: 100px;
+      word-break: break-all;
+      align-items: center;
+      position: relative;
+      display: flex;
+      right: -100%;
+      background-color: rgb(255, 255, 255);
+      box-shadow: 0 0 7px 0;
+      transition: all 0.5s ease-in;
+   }
+   .bar2.active {
+      right: 0;
+      transition: all 1s ease-in;
+   }
+   .bar2 img {
+      height: 100%;
+      width: 250px;
+      right: 35px;
+      color: black;
+      position: absolute;
+   }
+   .bar2 p {
+      width: 68%;
+      line-height: 1;
+      margin: 0 0 0 35px;
+   }
+   .bar3 {
+      width: 800px;
+      height: 100px;
+      word-break: break-all;
+      display: flex;
+      left: -100%;
+      position: relative;
+      box-shadow: 0 0 7px 0 black;
+      background-color: rgb(47, 255, 92);
+      transition: all 0.5s ease-in;
+   }
+   .bar3.active {
+      left: 0;
+      transition: all 1s ease-in;
+   }
+   .bar3 img {
+   }
+   .bar3 p {
+   }
+   .scroll__bars {
+      display: flex;
+      flex-direction: column;
+      align-items: center;
+   }
+   .info {
+   }
+   .info p {
+   }
+   .info img {
+   }
+   .info h1 {
+   }
+   .info-about-F {
+      display: flex;
+   }
+   ol {
+   }
+   .museum {
+      display: flex;
+      width: 100%;
+      align-items: center;
+   } */
+   .menu {
+      display: flex;
+      width: 75px;
+      margin: 35px 0 0 35px;
+   }
+   .header {
+      display: none;
+   }
+   .biography {
+      width: 100%;
+      display: flex;
+      align-items: center;
+   }
+   .biography img:first-child {
+      width: 200px;
+      height: 300px;
+      margin: 50px 50px 0 50px;
+   }
+   .biography img {
+      width: 250px;
+      height: 200px;
+   }
+   .biography p {
+      font-size: 15px;
+   }
+   .biography h1 {
+      line-height: 1;
+   }
+   .biography div {
+      width: 35%;
+   }
 }
 
-.header {
-   width: 100%;
-   height: 100px;
-   display: flex;
-   justify-content: space-around;
-   align-items: center;
-   box-shadow: 0 0 7px 0 black;
-}
-.biography {
-   width: 100%;
-   display: flex;
-   margin-bottom: 100px;
-}
-.biography img {
-   margin: 100px 0 0 100px;
-   width: 325px;
-   height: 500px;
-}
-.biography div {
-   margin: 100px 0 0 100px;
-   line-height: 2;
-   width: 50%;
-}
-.header a {
-   background-color: inherit;
-   border: none;
-   text-align: center;
-   user-select: none;
-   text-decoration: none;
-   cursor: pointer;
-   font-size: 25px;
-   color: black;
-   padding: 10px;
-   width: 150px;
-   box-shadow: 0 0 7px 0 black;
-}
-.bar1 {
-   width: 100%;
-   height: 300px;
-   word-break: break-all;
-   position: relative;
-   left: -100%;
-   box-shadow: 0 0 7px 0 black;
-   margin-bottom: 20px;
-   display: flex;
-   color: white;
-   background-color: rgb(74, 77, 255);
-   transition: all 0.5s ease-in;
-}
-.bar1.active {
-   left: 0;
-   transition: all 1s ease-in;
-}
-.bar1 img {
-   height: 100%;
-   width: 400px;
-   margin-left: 100px;
-}
-.bar1 p {
-   width: 50%;
-   line-height: 2;
-   margin-left: 100px;
-}
-.bar2 {
-   width: 100%;
-   height: 300px;
-   word-break: break-all;
-   right: -100%;
-   position: relative;
-   display: flex;
-   background-color: rgb(255, 255, 255);
-   box-shadow: 0 0 7px 0;
-   margin-bottom: 20px;
-   transition: all 0.5s ease-in;
-}
-.bar2.active {
-   right: 0;
-   transition: all 1s ease-in;
-}
-.bar2 img {
-   height: 100%;
-   width: 450px;
-   right: 100px;
-   color: black;
-   position: absolute;
-}
-.bar2 p {
-   width: 60%;
-   line-height: 2;
-   margin-left: 100px;
-}
-.bar3 {
-   width: 100%;
-   height: 300px;
-   word-break: break-all;
-   left: -100%;
-   display: flex;
-   position: relative;
-   box-shadow: 0 0 7px 0 black;
-   background-color: rgb(47, 255, 92);
-   transition: all 0.5s ease-in;
-}
-.bar3.active {
-   left: 0;
-   transition: all 1s ease-in;
-}
-.bar3 img {
-   height: 100%;
-   width: 400px;
-   margin-left: 100px;
-}
-.bar3 p {
-   margin-left: 100px;
-   line-height: 2;
-   margin-top: 60px;
-   width: 60%;
-}
-.scroll__bars {
-   display: flex;
-   flex-direction: column;
-   align-items: center;
-}
-.info {
-   width: 100%;
-   height: 300px;
-   display: flex;
-   margin-top: 50px;
-   flex-direction: column;
-}
-.forest {
-   display: flex;
-}
-.info .forest p {
-   width: 50%;
-   margin-left: 100px;
-   line-height: 2;
-}
-.info img {
-   width: 300px;
-   height: 100%;
-   margin-left: 100px;
-}
-.info p:nth-child(2) {
-   margin-left: 100px;
-}
-.info ul {
-   line-height: 2;
-   margin: 0 0 0 100px;
+@media screen and (min-width: 1451px) and (max-width: 2000px) {
+   .wrapper {
+      width: 100%;
+      display: flex;
+      flex-direction: column;
+   }
+   .menu {
+      width: 100px;
+      display: none;
+   }
+   .header {
+      width: 100%;
+      height: 100px;
+      display: flex;
+      justify-content: space-around;
+      align-items: center;
+      box-shadow: 0 0 7px 0 black;
+   }
+   .biography {
+      width: 100%;
+      display: flex;
+      margin-bottom: 100px;
+      align-items: center;
+   }
+
+   .biography img:first-child {
+      margin: 100px 0 0 100px;
+      width: 325px;
+      height: 500px;
+   }
+
+   .biography h1 {
+      line-height: 1;
+   }
+   .biography img {
+      width: 450px;
+      margin: 0 100px 0 0;
+      height: 350px;
+   }
+   .biography div {
+      margin: 100px 0 0 50px;
+      line-height: 2;
+      width: 50%;
+   }
+   .header a {
+      background-color: inherit;
+      border: none;
+      text-align: center;
+      user-select: none;
+      text-decoration: none;
+      cursor: pointer;
+      font-size: 25px;
+      color: black;
+      padding: 10px;
+      width: 150px;
+      box-shadow: 0 0 7px 0 black;
+   }
+   .header a:first-child {
+      background-color: inherit;
+      border: none;
+      text-align: center;
+      user-select: none;
+      text-decoration: none;
+      cursor: pointer;
+      font-size: 25px;
+      color: black;
+      padding: 10px;
+      width: 200px;
+      box-shadow: 0 0 7px 0 black;
+   }
+   .bar1 {
+      width: 100%;
+      height: 300px;
+      word-break: break-all;
+      position: relative;
+      left: -100%;
+      box-shadow: 0 0 7px 0 black;
+      margin-bottom: 20px;
+      display: flex;
+      color: white;
+      background-color: rgb(74, 77, 255);
+      transition: all 0.5s ease-in;
+   }
+   .bar1.active {
+      left: 0;
+      transition: all 1s ease-in;
+   }
+   .bar1 img {
+      height: 100%;
+      width: 400px;
+      margin-left: 100px;
+   }
+   .bar1 p {
+      width: 50%;
+      line-height: 2;
+      margin-left: 100px;
+   }
+   .bar2 {
+      width: 100%;
+      height: 300px;
+      word-break: break-all;
+      right: -100%;
+      position: relative;
+      display: flex;
+      background-color: rgb(255, 255, 255);
+      box-shadow: 0 0 7px 0;
+      margin-bottom: 20px;
+      transition: all 0.5s ease-in;
+   }
+   .bar2.active {
+      right: 0;
+      transition: all 1s ease-in;
+   }
+   .bar2 img {
+      height: 100%;
+      width: 450px;
+      right: 100px;
+      color: black;
+      position: absolute;
+   }
+   .bar2 p {
+      width: 60%;
+      line-height: 2;
+      margin-left: 100px;
+   }
+   .bar3 {
+      width: 100%;
+      height: 300px;
+      word-break: break-all;
+      left: -100%;
+      display: flex;
+      position: relative;
+      box-shadow: 0 0 7px 0 black;
+      background-color: rgb(47, 255, 92);
+      transition: all 0.5s ease-in;
+   }
+   .bar3.active {
+      left: 0;
+      transition: all 1s ease-in;
+   }
+   .bar3 img {
+      height: 100%;
+      width: 400px;
+      margin-left: 100px;
+   }
+   .bar3 p {
+      margin-left: 100px;
+      line-height: 2;
+      margin-top: 60px;
+      width: 60%;
+   }
+   .scroll__bars {
+      display: flex;
+      flex-direction: column;
+      align-items: center;
+   }
+   .info {
+      width: 100%;
+      height: 300px;
+      display: flex;
+      flex-direction: column;
+      margin-top: 50px;
+   }
+   .info p {
+      width: 60%;
+
+      margin-left: 100px;
+      line-height: 2;
+   }
+   .info img {
+      width: 300px;
+      height: 300px;
+      margin-left: 100px;
+   }
+   .info h1 {
+      margin: 0 0 0 100px;
+   }
+   .info-about-F {
+      display: flex;
+   }
+   ol {
+      margin-left: 100px;
+      width: 50%;
+      line-height: 2;
+   }
+   .museum {
+      display: flex;
+      width: 100%;
+      align-items: center;
+   }
 }

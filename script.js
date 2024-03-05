@@ -1,14 +1,13 @@
 const bars = document.querySelectorAll('#b'),
    containerForBars = document.querySelector('.scroll__bars'),
    info = document.querySelector('.info'),
-   headerLinks = document.querySelectorAll('.header a')
+   headerLinks = document.querySelectorAll('.header a[href^="#"]')
 
 const rect = containerForBars.getBoundingClientRect()
 if (scrollY > rect.top) {
    bars.forEach((el) => el.classList.add('active'))
    info.style.display = 'flex'
 }
-
 
 headerLinks.forEach((a, idx) => {
    a.addEventListener('click', function (e) {
