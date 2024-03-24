@@ -9,165 +9,1658 @@ body {
    color: black;
    font-size: 25px;
 }
-.wrapper {
-   width: 100%;
-   display: flex;
-   flex-direction: column;
+
+@media screen and (min-width: 1550px) and (max-width: 1749px) {
+   .header {
+      width: 100%;
+      height: 100px;
+      display: flex;
+      justify-content: space-around;
+      align-items: center;
+      box-shadow: 0 0 7px 0 black;
+   }
+   .header a {
+      background-color: inherit;
+      border: none;
+      text-align: center;
+      user-select: none;
+      text-decoration: none;
+      cursor: pointer;
+      font-size: 20px;
+
+      color: black;
+      padding: 10px;
+      width: 150px;
+      box-shadow: 0 0 7px 0 black;
+   }
+   .header a:first-child {
+      width: 175px;
+   }
+   .biography {
+      width: 100%;
+      margin-bottom: 75px;
+      display: flex;
+      align-items: center;
+   }
+   .biography img:first-child {
+      width: 250px;
+      height: 375px;
+      margin: 50px 50px 0 150px;
+   }
+   .biography img {
+      width: 400px;
+      margin: 50px 0 0 50px;
+      height: 300px;
+   }
+   .biography p {
+      font-size: 20px;
+      line-height: 1.5;
+   }
+   .biography h1 {
+      line-height: 1;
+   }
+   .biography div {
+      width: 35%;
+   }
+
+   .scroll__bars {
+      display: flex;
+      flex-direction: column;
+      align-items: center;
+   }
+
+   .bar1 {
+      width: 100%;
+      height: 250px;
+      hyphens: auto;
+
+      position: relative;
+      left: -100%;
+      box-shadow: 0 0 7px 0 black;
+      margin-bottom: 5px;
+      display: flex;
+      color: white;
+      background-color: rgb(74, 77, 255);
+      transition: all 0.5s ease-in;
+   }
+   .bar1.active {
+      left: 0;
+      transition: all 1s ease-in;
+   }
+   .bar1 img {
+      height: 100%;
+      width: 350px;
+      margin-left: 85px;
+   }
+   .bar1 p {
+      width: 60%;
+      font-size: 20px;
+      line-height: 2;
+      margin-left: 100px;
+   }
+   .bar2 {
+      width: 100%;
+      height: 250px;
+      hyphens: auto;
+      right: -100%;
+      position: relative;
+      display: flex;
+      background-color: rgb(255, 255, 255);
+      box-shadow: 0 0 7px 0;
+      margin-bottom: 5px;
+      transition: all 0.5s ease-in;
+   }
+   .bar2.active {
+      right: 0;
+      transition: all 1s ease-in;
+   }
+   .bar2 img {
+      height: 100%;
+      width: 375px;
+      right: 100px;
+      color: black;
+      position: absolute;
+   }
+   .bar2 p {
+      width: 60%;
+      margin-left: 100px;
+      font-size: 20px;
+      line-height: 2;
+   }
+   .bar3 {
+      width: 100%;
+      height: 250px;
+
+      hyphens: auto;
+
+      left: -100%;
+      display: flex;
+      position: relative;
+      box-shadow: 0 0 7px 0 black;
+      background-color: rgb(47, 255, 92);
+      transition: all 0.5s ease-in;
+   }
+   .bar3.active {
+      left: 0;
+      transition: all 1s ease-in;
+   }
+   .bar3 img {
+      height: 100%;
+      width: 325px;
+      margin-left: 85px;
+   }
+   .bar3 p {
+      margin: 35px 0 0 100px;
+      font-size: 20px;
+      margin-top: 35px;
+      width: 40%;
+      line-height: 2;
+   }
+   .info {
+      width: 100%;
+      height: 200px;
+      display: flex;
+      flex-direction: column;
+      margin-top: 25px;
+   }
+   .info p {
+      width: 60%;
+
+      margin-left: 100px;
+      font-size: 20px;
+   }
+   .info img {
+      width: 200px;
+      height: 200px;
+      margin-left: 100px;
+   }
+   .info h1 {
+      margin: 0 0 0 100px;
+   }
+   .info-about-F {
+      display: flex;
+   }
+   ol {
+      margin-left: 100px;
+      width: 50%;
+      font-size: 20px;
+   }
+   .museum {
+      display: flex;
+      width: 100%;
+      align-items: center;
+   }
 }
 
-.header {
-   width: 100%;
-   height: 100px;
-   display: flex;
-   justify-content: space-around;
-   align-items: center;
-   box-shadow: 0 0 7px 0 black;
-}
-.biography {
-   width: 100%;
-   display: flex;
-   margin-bottom: 100px;
-}
-.biography img {
-   margin: 100px 0 0 100px;
-   width: 325px;
-   height: 500px;
-}
-.biography div {
-   margin: 100px 0 0 100px;
-   line-height: 2;
-   width: 50%;
-}
-.header a {
-   background-color: inherit;
-   border: none;
-   text-align: center;
-   user-select: none;
-   text-decoration: none;
-   cursor: pointer;
-   font-size: 25px;
-   color: black;
-   padding: 10px;
-   width: 150px;
-   box-shadow: 0 0 7px 0 black;
-}
-.bar1 {
-   width: 100%;
-   height: 300px;
-   word-break: break-all;
-   position: relative;
-   left: -100%;
-   box-shadow: 0 0 7px 0 black;
-   margin-bottom: 20px;
-   display: flex;
-   color: white;
-   background-color: rgb(74, 77, 255);
-   transition: all 0.5s ease-in;
-}
-.bar1.active {
-   left: 0;
-   transition: all 1s ease-in;
-}
-.bar1 img {
-   height: 100%;
-   width: 400px;
-   margin-left: 100px;
-}
-.bar1 p {
-   width: 50%;
-   line-height: 2;
-   margin-left: 100px;
-}
-.bar2 {
-   width: 100%;
-   height: 300px;
-   word-break: break-all;
-   right: -100%;
-   position: relative;
-   display: flex;
-   background-color: rgb(255, 255, 255);
-   box-shadow: 0 0 7px 0;
-   margin-bottom: 20px;
-   transition: all 0.5s ease-in;
-}
-.bar2.active {
-   right: 0;
-   transition: all 1s ease-in;
-}
-.bar2 img {
-   height: 100%;
-   width: 450px;
-   right: 100px;
-   color: black;
-   position: absolute;
-}
-.bar2 p {
-   width: 60%;
-   line-height: 2;
-   margin-left: 100px;
-}
-.bar3 {
-   width: 100%;
-   height: 300px;
-   word-break: break-all;
-   left: -100%;
-   display: flex;
-   position: relative;
-   box-shadow: 0 0 7px 0 black;
-   background-color: rgb(47, 255, 92);
-   transition: all 0.5s ease-in;
-}
-.bar3.active {
-   left: 0;
-   transition: all 1s ease-in;
-}
-.bar3 img {
-   height: 100%;
-   width: 400px;
-   margin-left: 100px;
-}
-.bar3 p {
-   margin-left: 100px;
-   line-height: 2;
-   margin-top: 60px;
-   width: 60%;
-}
-.scroll__bars {
-   display: flex;
-   flex-direction: column;
-   align-items: center;
-}
-.info {
-   width: 100%;
-   height: 300px;
-   display: flex;
-   flex-direction: column;
-   margin-top: 50px;
-}
-.info p {
-   width: 60%;
+@media screen and (min-width: 1468px) and (max-width: 1549px) {
+   .header {
+      width: 100%;
+      height: 100px;
+      display: flex;
+      justify-content: space-around;
+      align-items: center;
+      box-shadow: 0 0 7px 0 black;
+   }
+   .header a {
+      background-color: inherit;
+      border: none;
+      text-align: center;
+      user-select: none;
+      text-decoration: none;
+      cursor: pointer;
+      font-size: 20px;
 
-   margin-left: 100px;
-   line-height: 2;
+      color: black;
+      padding: 10px;
+      width: 150px;
+      box-shadow: 0 0 7px 0 black;
+   }
+   .header a:first-child {
+      width: 175px;
+   }
+   .biography {
+      width: 100%;
+      margin-bottom: 75px;
+      display: flex;
+      align-items: center;
+   }
+   .biography img:first-child {
+      width: 250px;
+      height: 375px;
+      margin: 50px 50px 0 75px;
+   }
+   .biography img {
+      width: 400px;
+      margin: 50px 0 0 50px;
+      height: 300px;
+   }
+   .biography p {
+      font-size: 20px;
+      line-height: 1.5;
+   }
+   .biography h1 {
+      line-height: 1;
+      font-size: 40px;
+   }
+   .biography div {
+      width: 35%;
+   }
+
+   .scroll__bars {
+      display: flex;
+      flex-direction: column;
+      align-items: center;
+   }
+
+   .bar1 {
+      width: 100%;
+      height: 250px;
+      hyphens: auto;
+
+      position: relative;
+      left: -100%;
+      box-shadow: 0 0 7px 0 black;
+      margin-bottom: 5px;
+      display: flex;
+      color: white;
+      background-color: rgb(74, 77, 255);
+      transition: all 0.5s ease-in;
+   }
+   .bar1.active {
+      left: 0;
+      transition: all 1s ease-in;
+   }
+   .bar1 img {
+      height: 100%;
+      width: 350px;
+      margin-left: 85px;
+   }
+   .bar1 p {
+      width: 60%;
+      font-size: 20px;
+      line-height: 2;
+      margin-left: 100px;
+   }
+   .bar2 {
+      width: 100%;
+      height: 250px;
+      hyphens: auto;
+      right: -100%;
+      position: relative;
+      display: flex;
+      background-color: rgb(255, 255, 255);
+      box-shadow: 0 0 7px 0;
+      margin-bottom: 5px;
+      transition: all 0.5s ease-in;
+   }
+   .bar2.active {
+      right: 0;
+      transition: all 1s ease-in;
+   }
+   .bar2 img {
+      height: 100%;
+      width: 375px;
+      right: 100px;
+      color: black;
+      position: absolute;
+   }
+   .bar2 p {
+      width: 60%;
+      margin-left: 100px;
+      font-size: 20px;
+      line-height: 2;
+   }
+   .bar3 {
+      width: 100%;
+      height: 250px;
+
+      hyphens: auto;
+
+      left: -100%;
+      display: flex;
+      position: relative;
+      box-shadow: 0 0 7px 0 black;
+      background-color: rgb(47, 255, 92);
+      transition: all 0.5s ease-in;
+   }
+   .bar3.active {
+      left: 0;
+      transition: all 1s ease-in;
+   }
+   .bar3 img {
+      height: 100%;
+      width: 325px;
+      margin-left: 85px;
+   }
+   .bar3 p {
+      margin: 35px 0 0 100px;
+      font-size: 20px;
+      margin-top: 35px;
+      width: 40%;
+      line-height: 2;
+   }
+   .info {
+      width: 100%;
+      height: 200px;
+      display: flex;
+      flex-direction: column;
+      margin-top: 25px;
+   }
+   .info p {
+      width: 60%;
+
+      margin-left: 100px;
+      font-size: 20px;
+   }
+   .info img {
+      width: 200px;
+      height: 200px;
+      margin-left: 100px;
+   }
+   .info h1 {
+      margin: 0 0 0 100px;
+   }
+   .info-about-F {
+      display: flex;
+   }
+   ol {
+      margin-left: 100px;
+      width: 50%;
+      font-size: 20px;
+   }
+   .museum {
+      display: flex;
+      width: 100%;
+      align-items: center;
+   }
 }
-.info img {
-   width: 300px;
-   height: 300px;
-   margin-left: 100px;
+
+@media screen and (min-width: 1337px) and (max-width: 1467px) {
+   .header {
+      width: 100%;
+      height: 100px;
+      display: flex;
+      justify-content: space-around;
+      align-items: center;
+      box-shadow: 0 0 7px 0 black;
+   }
+   .header a {
+      background-color: inherit;
+      border: none;
+      text-align: center;
+      user-select: none;
+      text-decoration: none;
+      cursor: pointer;
+      font-size: 20px;
+
+      color: black;
+      padding: 10px;
+      width: 150px;
+      box-shadow: 0 0 7px 0 black;
+   }
+   .header a:first-child {
+      width: 175px;
+   }
+   .biography {
+      width: 100%;
+      margin-bottom: 75px;
+      display: flex;
+      align-items: center;
+   }
+   .biography img:first-child {
+      width: 250px;
+      height: 375px;
+      margin: 50px 50px 0 50px;
+   }
+   .biography img {
+      width: 400px;
+      margin: 50px 0 0 50px;
+      height: 300px;
+   }
+   .biography p {
+      font-size: 20px;
+      line-height: 1.5;
+   }
+   .biography h1 {
+      line-height: 1;
+      font-size: 40px;
+   }
+   .biography div {
+      width: 35%;
+   }
+
+   .scroll__bars {
+      display: flex;
+      flex-direction: column;
+      align-items: center;
+   }
+
+   .bar1 {
+      width: 100%;
+      height: 250px;
+      hyphens: auto;
+
+      position: relative;
+      left: -100%;
+      box-shadow: 0 0 7px 0 black;
+      margin-bottom: 5px;
+      display: flex;
+      color: white;
+      background-color: rgb(74, 77, 255);
+      transition: all 0.5s ease-in;
+   }
+   .bar1.active {
+      left: 0;
+      transition: all 1s ease-in;
+   }
+   .bar1 img {
+      height: 100%;
+      width: 350px;
+      margin-left: 85px;
+   }
+   .bar1 p {
+      width: 60%;
+      font-size: 20px;
+      line-height: 2;
+      margin-left: 100px;
+   }
+   .bar2 {
+      width: 100%;
+      height: 250px;
+      hyphens: auto;
+      right: -100%;
+      position: relative;
+      display: flex;
+      background-color: rgb(255, 255, 255);
+      box-shadow: 0 0 7px 0;
+      margin-bottom: 5px;
+      transition: all 0.5s ease-in;
+   }
+   .bar2.active {
+      right: 0;
+      transition: all 1s ease-in;
+   }
+   .bar2 img {
+      height: 100%;
+      width: 375px;
+      right: 100px;
+      color: black;
+      position: absolute;
+   }
+   .bar2 p {
+      width: 57%;
+      margin-left: 100px;
+      font-size: 20px;
+      line-height: 1.7;
+   }
+   .bar3 {
+      width: 100%;
+      height: 250px;
+
+      hyphens: auto;
+
+      left: -100%;
+      display: flex;
+      position: relative;
+      box-shadow: 0 0 7px 0 black;
+      background-color: rgb(47, 255, 92);
+      transition: all 0.5s ease-in;
+   }
+   .bar3.active {
+      left: 0;
+      transition: all 1s ease-in;
+   }
+   .bar3 img {
+      height: 100%;
+      width: 325px;
+      margin-left: 85px;
+   }
+   .bar3 p {
+      margin: 35px 0 0 100px;
+      font-size: 20px;
+      margin-top: 35px;
+      width: 60%;
+      line-height: 2;
+   }
+   .info {
+      width: 100%;
+      height: 200px;
+      display: flex;
+      flex-direction: column;
+      margin-top: 25px;
+   }
+   .info p {
+      width: 60%;
+
+      margin-left: 100px;
+      font-size: 20px;
+   }
+   .info img {
+      width: 200px;
+      height: 200px;
+      margin-left: 100px;
+   }
+   .info h1 {
+      margin: 0 0 0 100px;
+   }
+   .info-about-F {
+      display: flex;
+   }
+   ol {
+      margin-left: 100px;
+      width: 50%;
+      font-size: 20px;
+   }
+   .museum {
+      display: flex;
+      width: 100%;
+      align-items: center;
+   }
 }
-.info h1 {
-   margin: 0 0 0 100px;
+
+@media screen and (min-width: 1219px) and (max-width: 1336px) {
+   .header {
+      width: 100%;
+      height: 100px;
+      display: flex;
+      justify-content: space-around;
+      align-items: center;
+      box-shadow: 0 0 7px 0 black;
+   }
+   .header a {
+      background-color: inherit;
+      border: none;
+      text-align: center;
+      user-select: none;
+      text-decoration: none;
+      cursor: pointer;
+      font-size: 20px;
+
+      color: black;
+      padding: 10px;
+      width: 150px;
+      box-shadow: 0 0 7px 0 black;
+   }
+   .header a:first-child {
+      width: 175px;
+   }
+   .biography {
+      width: 100%;
+      margin-bottom: 75px;
+      display: flex;
+      align-items: center;
+   }
+   .biography img:first-child {
+      width: 250px;
+      height: 375px;
+      margin: 50px 50px 0 50px;
+   }
+   .biography img {
+      width: 350px;
+      margin: 50px 0 0 50px;
+      height: 270px;
+   }
+   .biography p {
+      font-size: 20px;
+      line-height: 1.5;
+   }
+   .biography h1 {
+      line-height: 1;
+      font-size: 40px;
+   }
+   .biography div {
+      width: 35%;
+   }
+
+   .scroll__bars {
+      display: flex;
+      flex-direction: column;
+      align-items: center;
+   }
+
+   .bar1 {
+      width: 100%;
+      height: 250px;
+      hyphens: auto;
+
+      position: relative;
+      left: -100%;
+      box-shadow: 0 0 7px 0 black;
+      margin-bottom: 5px;
+      display: flex;
+      color: white;
+      background-color: rgb(74, 77, 255);
+      transition: all 0.5s ease-in;
+   }
+   .bar1.active {
+      left: 0;
+      transition: all 1s ease-in;
+   }
+   .bar1 img {
+      height: 100%;
+      width: 350px;
+      margin-left: 85px;
+   }
+   .bar1 p {
+      width: 55%;
+      font-size: 20px;
+      line-height: 2;
+      margin-left: 100px;
+   }
+   .bar2 {
+      width: 100%;
+      height: 250px;
+      hyphens: auto;
+      right: -100%;
+      position: relative;
+      display: flex;
+      background-color: rgb(255, 255, 255);
+      box-shadow: 0 0 7px 0;
+      margin-bottom: 5px;
+      transition: all 0.5s ease-in;
+   }
+   .bar2.active {
+      right: 0;
+      transition: all 1s ease-in;
+   }
+   .bar2 img {
+      height: 100%;
+      width: 375px;
+      right: 100px;
+      color: black;
+      position: absolute;
+   }
+   .bar2 p {
+      width: 53%;
+      margin-left: 100px;
+      font-size: 20px;
+      line-height: 1.7;
+   }
+   .bar3 {
+      width: 100%;
+      height: 250px;
+
+      hyphens: auto;
+
+      left: -100%;
+      display: flex;
+      position: relative;
+      box-shadow: 0 0 7px 0 black;
+      background-color: rgb(47, 255, 92);
+      transition: all 0.5s ease-in;
+   }
+   .bar3.active {
+      left: 0;
+      transition: all 1s ease-in;
+   }
+   .bar3 img {
+      height: 100%;
+      width: 325px;
+      margin-left: 85px;
+   }
+   .bar3 p {
+      margin: 35px 0 0 100px;
+      font-size: 20px;
+      margin-top: 35px;
+      width: 40%;
+      line-height: 2;
+   }
+   .info {
+      width: 100%;
+      height: 200px;
+      display: flex;
+      flex-direction: column;
+      margin-top: 25px;
+   }
+   .info p {
+      width: 60%;
+
+      margin-left: 100px;
+      font-size: 20px;
+   }
+   .info img {
+      width: 200px;
+      height: 200px;
+      margin-left: 100px;
+   }
+   .info h1 {
+      margin: 0 0 0 100px;
+   }
+   .info-about-F {
+      display: flex;
+   }
+   ol {
+      margin-left: 100px;
+      width: 50%;
+      font-size: 20px;
+   }
+   .museum {
+      display: flex;
+      width: 100%;
+      align-items: center;
+   }
 }
-.info-about-F {
-   display: flex;
+
+@media screen and (min-width: 1209px) and (max-width: 1218px) {
+   .header {
+      width: 100%;
+      height: 100px;
+      display: flex;
+      justify-content: space-around;
+      align-items: center;
+      box-shadow: 0 0 7px 0 black;
+   }
+   .header a {
+      background-color: inherit;
+      border: none;
+      text-align: center;
+      user-select: none;
+      text-decoration: none;
+      cursor: pointer;
+      font-size: 20px;
+
+      color: black;
+      padding: 10px;
+      width: 150px;
+      box-shadow: 0 0 7px 0 black;
+   }
+   .header a:first-child {
+      width: 175px;
+   }
+   .biography {
+      width: 100%;
+      margin-bottom: 75px;
+      display: flex;
+      align-items: center;
+   }
+   .biography img:first-child {
+      width: 250px;
+      height: 375px;
+      margin: 50px 50px 0 50px;
+   }
+   .biography img {
+      width: 350px;
+      margin: 50px 0 0 50px;
+      height: 270px;
+   }
+   .biography p {
+      font-size: 20px;
+      line-height: 1.5;
+   }
+   .biography h1 {
+      line-height: 1;
+      font-size: 40px;
+   }
+   .biography div {
+      width: 35%;
+   }
+
+   .scroll__bars {
+      display: flex;
+      flex-direction: column;
+      align-items: center;
+   }
+
+   .bar1 {
+      width: 100%;
+      height: 250px;
+      hyphens: auto;
+
+      position: relative;
+      left: -100%;
+      box-shadow: 0 0 7px 0 black;
+      margin-bottom: 5px;
+      display: flex;
+      color: white;
+      background-color: rgb(74, 77, 255);
+      transition: all 0.5s ease-in;
+   }
+   .bar1.active {
+      left: 0;
+      transition: all 1s ease-in;
+   }
+   .bar1 img {
+      height: 100%;
+      width: 350px;
+      margin-left: 85px;
+   }
+   .bar1 p {
+      width: 55%;
+      font-size: 20px;
+      line-height: 2;
+      margin-left: 100px;
+   }
+   .bar2 {
+      width: 100%;
+      height: 250px;
+      hyphens: auto;
+      right: -100%;
+      position: relative;
+      display: flex;
+      background-color: rgb(255, 255, 255);
+      box-shadow: 0 0 7px 0;
+      margin-bottom: 5px;
+      transition: all 0.5s ease-in;
+   }
+   .bar2.active {
+      right: 0;
+      transition: all 1s ease-in;
+   }
+   .bar2 img {
+      height: 100%;
+      width: 375px;
+      right: 100px;
+      color: black;
+      position: absolute;
+   }
+   .bar2 p {
+      width: 45%;
+      margin-left: 100px;
+      font-size: 20px;
+      line-height: 1.5;
+   }
+   .bar3 {
+      width: 100%;
+      height: 250px;
+
+      hyphens: auto;
+
+      left: -100%;
+      display: flex;
+      position: relative;
+      box-shadow: 0 0 7px 0 black;
+      background-color: rgb(47, 255, 92);
+      transition: all 0.5s ease-in;
+   }
+   .bar3.active {
+      left: 0;
+      transition: all 1s ease-in;
+   }
+   .bar3 img {
+      height: 100%;
+      width: 325px;
+      margin-left: 85px;
+   }
+   .bar3 p {
+      margin: 35px 0 0 100px;
+      font-size: 20px;
+      margin-top: 35px;
+      width: 40%;
+      line-height: 2;
+   }
+   .info {
+      width: 100%;
+      height: 200px;
+      display: flex;
+      flex-direction: column;
+      margin-top: 25px;
+   }
+   .info p {
+      width: 60%;
+
+      margin-left: 100px;
+      font-size: 20px;
+   }
+   .info img {
+      width: 200px;
+      height: 200px;
+      margin-left: 100px;
+   }
+   .info h1 {
+      margin: 0 0 0 100px;
+   }
+   .info-about-F {
+      display: flex;
+   }
+   ol {
+      margin-left: 100px;
+      width: 50%;
+      font-size: 20px;
+   }
+   .museum {
+      display: flex;
+      width: 100%;
+      align-items: center;
+   }
 }
-ol {
-   margin-left: 100px;
-   width: 50%;
-   line-height: 2;
+
+@media screen and (min-width: 1195px) and (max-width: 1208px) {
+   .header {
+      width: 100%;
+      height: 100px;
+      display: flex;
+      justify-content: space-around;
+      align-items: center;
+      box-shadow: 0 0 7px 0 black;
+   }
+   .header a {
+      background-color: inherit;
+      border: none;
+      text-align: center;
+      user-select: none;
+      text-decoration: none;
+      cursor: pointer;
+      font-size: 20px;
+
+      color: black;
+      padding: 10px;
+      width: 150px;
+      box-shadow: 0 0 7px 0 black;
+   }
+   .header a:first-child {
+      width: 175px;
+   }
+   .biography {
+      width: 100%;
+      margin-bottom: 75px;
+      display: flex;
+      align-items: center;
+   }
+   .biography img:first-child {
+      width: 210px;
+      height: 330px;
+      margin: 50px 50px 0 50px;
+   }
+   .biography img {
+      width: 350px;
+      margin: 50px 0 0 50px;
+      height: 270px;
+   }
+   .biography p {
+      font-size: 20px;
+      line-height: 1.5;
+   }
+   .biography h1 {
+      line-height: 1;
+      font-size: 35px;
+   }
+   .biography div {
+      width: 35%;
+   }
+
+   .scroll__bars {
+      display: flex;
+      flex-direction: column;
+      align-items: center;
+   }
+
+   .bar1 {
+      width: 100%;
+      height: 250px;
+      hyphens: auto;
+
+      position: relative;
+      left: -100%;
+      box-shadow: 0 0 7px 0 black;
+      margin-bottom: 5px;
+      display: flex;
+      color: white;
+      background-color: rgb(74, 77, 255);
+      transition: all 0.5s ease-in;
+   }
+   .bar1.active {
+      left: 0;
+      transition: all 1s ease-in;
+   }
+   .bar1 img {
+      height: 100%;
+      width: 350px;
+      margin-left: 85px;
+   }
+   .bar1 p {
+      width: 45%;
+      font-size: 20px;
+      line-height: 1.5;
+      margin-left: 100px;
+   }
+   .bar2 {
+      width: 100%;
+      height: 250px;
+      hyphens: auto;
+      right: -100%;
+      position: relative;
+      display: flex;
+      background-color: rgb(255, 255, 255);
+      box-shadow: 0 0 7px 0;
+      margin-bottom: 5px;
+      transition: all 0.5s ease-in;
+   }
+   .bar2.active {
+      right: 0;
+      transition: all 1s ease-in;
+   }
+   .bar2 img {
+      height: 100%;
+      width: 375px;
+      right: 100px;
+      color: black;
+      position: absolute;
+   }
+   .bar2 p {
+      width: 45%;
+      margin-left: 100px;
+      font-size: 20px;
+      line-height: 1.5;
+   }
+   .bar3 {
+      width: 100%;
+      height: 250px;
+
+      hyphens: auto;
+
+      left: -100%;
+      display: flex;
+      position: relative;
+      box-shadow: 0 0 7px 0 black;
+      background-color: rgb(47, 255, 92);
+      transition: all 0.5s ease-in;
+   }
+   .bar3.active {
+      left: 0;
+      transition: all 1s ease-in;
+   }
+   .bar3 img {
+      height: 100%;
+      width: 325px;
+      margin-left: 85px;
+   }
+   .bar3 p {
+      margin: 35px 0 0 100px;
+      font-size: 20px;
+      margin-top: 35px;
+      width: 40%;
+      line-height: 2;
+   }
+   .info {
+      width: 100%;
+      height: 200px;
+      display: flex;
+      flex-direction: column;
+      margin-top: 25px;
+   }
+   .info p {
+      width: 60%;
+
+      margin-left: 100px;
+      font-size: 20px;
+   }
+   .info img {
+      width: 200px;
+      height: 200px;
+      margin-left: 100px;
+   }
+   .info h1 {
+      margin: 0 0 0 100px;
+   }
+   .info-about-F {
+      display: flex;
+   }
+   ol {
+      margin-left: 100px;
+      width: 50%;
+      font-size: 20px;
+   }
+   .museum {
+      display: flex;
+      width: 100%;
+      align-items: center;
+   }
 }
-.museum {
-   display: flex;
-   width: 100%;
-   align-items: center;
+
+@media screen and (min-width: 1150px) and (max-width: 1194px) {
+   .header {
+      width: 100%;
+      height: 100px;
+      display: flex;
+      justify-content: space-around;
+      align-items: center;
+      box-shadow: 0 0 7px 0 black;
+   }
+   .header a {
+      background-color: inherit;
+      border: none;
+      text-align: center;
+      user-select: none;
+      text-decoration: none;
+      cursor: pointer;
+      font-size: 20px;
+
+      color: black;
+      padding: 10px;
+      width: 150px;
+      box-shadow: 0 0 7px 0 black;
+   }
+   .header a:first-child {
+      width: 175px;
+   }
+   .biography {
+      width: 100%;
+      margin-bottom: 75px;
+      display: flex;
+      align-items: center;
+   }
+   .biography img:first-child {
+      width: 210px;
+      height: 330px;
+      margin: 50px 50px 0 50px;
+   }
+   .biography img {
+      width: 350px;
+      margin: 50px 0 0 50px;
+      height: 270px;
+   }
+   .biography p {
+      font-size: 20px;
+      line-height: 1.5;
+   }
+   .biography h1 {
+      line-height: 1;
+      font-size: 35px;
+   }
+   .biography div {
+      width: 35%;
+   }
+
+   .scroll__bars {
+      display: flex;
+      flex-direction: column;
+      align-items: center;
+   }
+
+   .bar1 {
+      width: 100%;
+      height: 250px;
+      hyphens: auto;
+
+      position: relative;
+      left: -100%;
+      box-shadow: 0 0 7px 0 black;
+      margin-bottom: 5px;
+      display: flex;
+      color: white;
+      background-color: rgb(74, 77, 255);
+      transition: all 0.5s ease-in;
+   }
+   .bar1.active {
+      left: 0;
+      transition: all 1s ease-in;
+   }
+   .bar1 img {
+      height: 100%;
+      width: 350px;
+      margin-left: 85px;
+   }
+   .bar1 p {
+      width: 45%;
+      font-size: 20px;
+      line-height: 1.5;
+      margin-left: 100px;
+   }
+   .bar2 {
+      width: 100%;
+      height: 250px;
+      hyphens: auto;
+      right: -100%;
+      position: relative;
+      display: flex;
+      background-color: rgb(255, 255, 255);
+      box-shadow: 0 0 7px 0;
+      margin-bottom: 5px;
+      transition: all 0.5s ease-in;
+   }
+   .bar2.active {
+      right: 0;
+      transition: all 1s ease-in;
+   }
+   .bar2 img {
+      height: 100%;
+      width: 375px;
+      right: 100px;
+      color: black;
+      position: absolute;
+   }
+   .bar2 p {
+      width: 50%;
+      margin-left: 100px;
+      font-size: 20px;
+      line-height: 1.5;
+   }
+   .bar3 {
+      width: 100%;
+      height: 250px;
+
+      hyphens: auto;
+
+      left: -100%;
+      display: flex;
+      position: relative;
+      box-shadow: 0 0 7px 0 black;
+      background-color: rgb(47, 255, 92);
+      transition: all 0.5s ease-in;
+   }
+   .bar3.active {
+      left: 0;
+      transition: all 1s ease-in;
+   }
+   .bar3 img {
+      height: 100%;
+      width: 325px;
+      margin-left: 85px;
+   }
+   .bar3 p {
+      margin: 35px 0 0 100px;
+      font-size: 20px;
+      margin-top: 35px;
+      width: 50%;
+      line-height: 2;
+   }
+   .info {
+      width: 100%;
+      height: 200px;
+      display: flex;
+      flex-direction: column;
+      margin-top: 25px;
+   }
+   .info p {
+      width: 60%;
+
+      margin-left: 100px;
+      font-size: 20px;
+   }
+   .info img {
+      width: 200px;
+      height: 200px;
+      margin-left: 100px;
+   }
+   .info h1 {
+      margin: 0 0 0 100px;
+   }
+   .info-about-F {
+      display: flex;
+   }
+   ol {
+      margin-left: 100px;
+      width: 50%;
+      font-size: 20px;
+   }
+   .museum {
+      display: flex;
+      width: 100%;
+      align-items: center;
+   }
+}
+
+@media screen and (min-width: 1000px) and (max-width: 1149px) {
+   .header {
+      width: 100%;
+      height: 100px;
+      display: flex;
+      justify-content: space-around;
+      align-items: center;
+      box-shadow: 0 0 7px 0 black;
+   }
+   .header a {
+      background-color: inherit;
+      border: none;
+      text-align: center;
+      user-select: none;
+      text-decoration: none;
+      cursor: pointer;
+      font-size: 20px;
+
+      color: black;
+      padding: 10px;
+      width: 150px;
+      box-shadow: 0 0 7px 0 black;
+   }
+   .header a:first-child {
+      width: 175px;
+   }
+   .biography {
+      width: 100%;
+      margin-bottom: 75px;
+      display: flex;
+      align-items: center;
+   }
+   .biography img:first-child {
+      width: 210px;
+      height: 330px;
+      margin: 50px 50px 0 20px;
+   }
+   .biography img {
+      width: 350px;
+      margin: 50px 0 0 50px;
+      height: 270px;
+   }
+   .biography p {
+      font-size: 17px;
+      line-height: 1.5;
+   }
+   .biography h1 {
+      line-height: 1;
+      font-size: 30px;
+   }
+   .biography div {
+      width: 35%;
+   }
+
+   .scroll__bars {
+      display: flex;
+      flex-direction: column;
+      align-items: center;
+   }
+
+   .bar1 {
+      width: 100%;
+      height: 250px;
+      hyphens: auto;
+
+      position: relative;
+      left: -100%;
+      box-shadow: 0 0 7px 0 black;
+      margin-bottom: 5px;
+      display: flex;
+      color: white;
+      background-color: rgb(74, 77, 255);
+      transition: all 0.5s ease-in;
+   }
+   .bar1.active {
+      left: 0;
+      transition: all 1s ease-in;
+   }
+   .bar1 img {
+      height: 100%;
+      width: 350px;
+      margin-left: 85px;
+   }
+   .bar1 p {
+      width: 45%;
+      font-size: 18px;
+      line-height: 1.5;
+      margin-left: 100px;
+   }
+   .bar2 {
+      width: 100%;
+      height: 250px;
+      hyphens: auto;
+      right: -100%;
+      position: relative;
+      display: flex;
+      background-color: rgb(255, 255, 255);
+      box-shadow: 0 0 7px 0;
+      margin-bottom: 5px;
+      transition: all 0.5s ease-in;
+   }
+   .bar2.active {
+      right: 0;
+      transition: all 1s ease-in;
+   }
+   .bar2 img {
+      height: 100%;
+      width: 375px;
+      right: 100px;
+      color: black;
+      position: absolute;
+   }
+   .bar2 p {
+      width: 43%;
+      margin-left: 100px;
+      font-size: 18px;
+      line-height: 1.5;
+   }
+   .bar3 {
+      width: 100%;
+      height: 250px;
+
+      hyphens: auto;
+
+      left: -100%;
+      display: flex;
+      position: relative;
+      box-shadow: 0 0 7px 0 black;
+      background-color: rgb(47, 255, 92);
+      transition: all 0.5s ease-in;
+   }
+   .bar3.active {
+      left: 0;
+      transition: all 1s ease-in;
+   }
+   .bar3 img {
+      height: 100%;
+      width: 325px;
+      margin-left: 85px;
+   }
+   .bar3 p {
+      margin: 35px 0 0 100px;
+      font-size: 20px;
+      margin-top: 35px;
+      width: 50%;
+      line-height: 2;
+   }
+   .info {
+      width: 100%;
+      height: 200px;
+      display: flex;
+      flex-direction: column;
+      margin-top: 25px;
+   }
+   .info p {
+      width: 60%;
+
+      margin-left: 100px;
+      font-size: 20px;
+   }
+   .info img {
+      width: 200px;
+      height: 200px;
+      margin-left: 100px;
+   }
+   .info h1 {
+      margin: 0 0 0 100px;
+   }
+   .info-about-F {
+      display: flex;
+   }
+   ol {
+      margin-left: 100px;
+      width: 50%;
+      font-size: 20px;
+   }
+   .museum {
+      display: flex;
+      width: 100%;
+      align-items: center;
+   }
+}
+
+@media screen and (min-width: 1750px) and (max-width: 2000px) {
+   .wrapper {
+      width: 100%;
+      display: flex;
+      flex-direction: column;
+   }
+
+   .header {
+      width: 100%;
+      height: 100px;
+      display: flex;
+      justify-content: space-around;
+      align-items: center;
+      box-shadow: 0 0 7px 0 black;
+   }
+   .biography {
+      width: 100%;
+      display: flex;
+      margin-bottom: 100px;
+      align-items: center;
+   }
+
+   .biography img:first-child {
+      margin: 100px 0 0 100px;
+      width: 325px;
+      height: 500px;
+   }
+
+   .biography h1 {
+      line-height: 1;
+   }
+   .biography img {
+      width: 450px;
+      margin: 100px 100px 0 0;
+      height: 350px;
+   }
+   .biography div {
+      margin: 100px 0 0 50px;
+      line-height: 2;
+      width: 50%;
+   }
+   .header a {
+      background-color: inherit;
+      border: none;
+      text-align: center;
+      user-select: none;
+      text-decoration: none;
+      cursor: pointer;
+      font-size: 25px;
+      color: black;
+      padding: 10px;
+      width: 150px;
+      box-shadow: 0 0 7px 0 black;
+   }
+   .header a:first-child {
+      background-color: inherit;
+      border: none;
+      text-align: center;
+      user-select: none;
+      text-decoration: none;
+      cursor: pointer;
+      font-size: 25px;
+      color: black;
+      padding: 10px;
+      width: 200px;
+      box-shadow: 0 0 7px 0 black;
+   }
+   .bar1 {
+      width: 100%;
+      height: 300px;
+      hyphens: auto;
+
+      position: relative;
+      left: -100%;
+      box-shadow: 0 0 7px 0 black;
+      margin-bottom: 20px;
+      display: flex;
+      color: white;
+      background-color: rgb(74, 77, 255);
+      transition: all 0.5s ease-in;
+   }
+   .bar1.active {
+      left: 0;
+      transition: all 1s ease-in;
+   }
+   .bar1 img {
+      height: 100%;
+      width: 400px;
+      margin-left: 100px;
+   }
+   .bar1 p {
+      width: 60%;
+      line-height: 2;
+      margin-left: 100px;
+   }
+   .bar2 {
+      width: 100%;
+      height: 300px;
+      hyphens: auto;
+
+      right: -100%;
+      position: relative;
+      display: flex;
+      background-color: rgb(255, 255, 255);
+      box-shadow: 0 0 7px 0;
+      margin-bottom: 20px;
+      transition: all 0.5s ease-in;
+   }
+   .bar2.active {
+      right: 0;
+      transition: all 1s ease-in;
+   }
+   .bar2 img {
+      height: 100%;
+      width: 450px;
+      right: 100px;
+      color: black;
+      position: absolute;
+   }
+   .bar2 p {
+      width: 63%;
+      line-height: 2;
+      margin-left: 100px;
+   }
+   .bar3 {
+      width: 100%;
+      height: 300px;
+      hyphens: auto;
+
+      left: -100%;
+      display: flex;
+      position: relative;
+      box-shadow: 0 0 7px 0 black;
+      background-color: rgb(47, 255, 92);
+      transition: all 0.5s ease-in;
+   }
+   .bar3.active {
+      left: 0;
+      transition: all 1s ease-in;
+   }
+   .bar3 img {
+      height: 100%;
+      width: 400px;
+      margin-left: 100px;
+   }
+   .bar3 p {
+      margin-left: 100px;
+      line-height: 2;
+      margin-top: 60px;
+      width: 60%;
+   }
+   .scroll__bars {
+      display: flex;
+      flex-direction: column;
+      align-items: center;
+   }
+   .info {
+      width: 100%;
+      height: 300px;
+      display: flex;
+      flex-direction: column;
+      margin-top: 50px;
+   }
+   .info p {
+      width: 60%;
+
+      margin-left: 100px;
+      line-height: 2;
+   }
+   .info img {
+      width: 300px;
+      height: 300px;
+      margin-left: 100px;
+   }
+   .info h1 {
+      margin: 0 0 0 100px;
+   }
+   .info-about-F {
+      display: flex;
+   }
+   ol {
+      margin-left: 100px;
+      width: 50%;
+      line-height: 2;
+   }
+   .museum {
+      display: flex;
+      width: 100%;
+      align-items: center;
+   }
 }

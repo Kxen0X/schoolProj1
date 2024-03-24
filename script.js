@@ -1,14 +1,17 @@
 const bars = document.querySelectorAll('#b'),
    containerForBars = document.querySelector('.scroll__bars'),
    info = document.querySelector('.info'),
-   headerLinks = document.querySelectorAll('.header a')
+   headerLinks = document.querySelectorAll('.header a[href^="#"]')
+
+if (document.documentElement.clientWidth <= 1749) {
+   bars.forEach((bar) => bar.classList.add('active'))
+}
 
 const rect = containerForBars.getBoundingClientRect()
 if (scrollY > rect.top) {
    bars.forEach((el) => el.classList.add('active'))
    info.style.display = 'flex'
 }
-
 
 headerLinks.forEach((a, idx) => {
    a.addEventListener('click', function (e) {
@@ -31,7 +34,7 @@ headerLinks.forEach((a, idx) => {
 
 function isInViewport(element) {
    const rect = element.getBoundingClientRect()
-   if (scrollY < rect.top) {
+   if (scrollY < rect.top && !(document.documentElement.clientWidth <= 1749)) {
       bars.forEach((el) => el.classList.remove('active'))
       info.style.display = 'none'
    }
@@ -48,9 +51,8 @@ function scroll() {
    if (isInViewport(containerForBars)) {
       bars.forEach((el, idx) => {
          el.classList.add('active')
-         info.style.display = 'flex'
       })
-   } else {
+      info.style.display = 'flex'
    }
 }
 
