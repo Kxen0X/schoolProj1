@@ -10,6 +10,7 @@ body {
    font-size: 25px;
 }
 
+<<<<<<< HEAD
 @media screen and (min-width: 1550px) and (max-width: 1749px) {
    .header {
       width: 100%;
@@ -55,11 +56,49 @@ body {
    .biography p {
       font-size: 20px;
       line-height: 1.5;
+=======
+@media screen and (min-width: 1000px) and (max-width: 1450px) {
+   /* body,
+   html {
+      padding: 0;
+      margin: 0;
+      box-sizing: border-box;
+      background-color: #c0c0c0;
+      width: 800px;
+      height: 100vh;
+      overflow-x: hidden;
+      touch-action: cross-slide-y;
+      color: black;
+      font-size: 15px;
+   }
+   .biography {
+      width: 800px;
+      display: flex;
+      align-items: center;
+   }
+   .menu {
+      display: flex;
+      width: 75px;
+   }
+   .header {
+      display: none;
+   }
+   .biography img:first-child {
+      width: 200px;
+      height: 250px;
+   }
+
+   .biography img {
+      width: 300px;
+      margin: 35px;
+      height: 250px;
+>>>>>>> main
    }
    .biography h1 {
       line-height: 1;
    }
    .biography div {
+<<<<<<< HEAD
       width: 35%;
    }
 
@@ -78,6 +117,20 @@ body {
       left: -100%;
       box-shadow: 0 0 7px 0 black;
       margin-bottom: 5px;
+=======
+      margin: 0 0 0 0;
+      line-height: 1;
+      width: 50%;
+   }
+
+   .bar1 {
+      width: 800px;
+      height: 150px;
+      word-break: break-all;
+      position: relative;
+      left: -100%;
+      box-shadow: 0 0 7px 0 black;
+>>>>>>> main
       display: flex;
       color: white;
       background-color: rgb(74, 77, 255);
@@ -89,6 +142,7 @@ body {
    }
    .bar1 img {
       height: 100%;
+<<<<<<< HEAD
       width: 350px;
       margin-left: 85px;
    }
@@ -108,6 +162,26 @@ body {
       background-color: rgb(255, 255, 255);
       box-shadow: 0 0 7px 0;
       margin-bottom: 5px;
+=======
+      width: 200px;
+      margin-left: 35px;
+   }
+   .bar1 p {
+      width: 80%;
+      line-height: 2;
+      margin: 0 0 0 35px;
+   }
+   .bar2 {
+      width: 800px;
+      height: 100px;
+      word-break: break-all;
+      align-items: center;
+      position: relative;
+      display: flex;
+      right: -100%;
+      background-color: rgb(255, 255, 255);
+      box-shadow: 0 0 7px 0;
+>>>>>>> main
       transition: all 0.5s ease-in;
    }
    .bar2.active {
@@ -116,12 +190,18 @@ body {
    }
    .bar2 img {
       height: 100%;
+<<<<<<< HEAD
       width: 375px;
       right: 100px;
+=======
+      width: 250px;
+      right: 35px;
+>>>>>>> main
       color: black;
       position: absolute;
    }
    .bar2 p {
+<<<<<<< HEAD
       width: 60%;
       margin-left: 100px;
       font-size: 20px;
@@ -135,6 +215,18 @@ body {
 
       left: -100%;
       display: flex;
+=======
+      width: 68%;
+      line-height: 1;
+      margin: 0 0 0 35px;
+   }
+   .bar3 {
+      width: 800px;
+      height: 100px;
+      word-break: break-all;
+      display: flex;
+      left: -100%;
+>>>>>>> main
       position: relative;
       box-shadow: 0 0 7px 0 black;
       background-color: rgb(47, 255, 92);
@@ -145,6 +237,7 @@ body {
       transition: all 1s ease-in;
    }
    .bar3 img {
+<<<<<<< HEAD
       height: 100%;
       width: 325px;
       margin-left: 85px;
@@ -176,19 +269,40 @@ body {
    }
    .info h1 {
       margin: 0 0 0 100px;
+=======
+   }
+   .bar3 p {
+   }
+   .scroll__bars {
+      display: flex;
+      flex-direction: column;
+      align-items: center;
+   }
+   .info {
+   }
+   .info p {
+   }
+   .info img {
+   }
+   .info h1 {
+>>>>>>> main
    }
    .info-about-F {
       display: flex;
    }
    ol {
+<<<<<<< HEAD
       margin-left: 100px;
       width: 50%;
       font-size: 20px;
+=======
+>>>>>>> main
    }
    .museum {
       display: flex;
       width: 100%;
       align-items: center;
+<<<<<<< HEAD
    }
 }
 
@@ -1474,12 +1588,56 @@ body {
 }
 
 @media screen and (min-width: 1750px) and (max-width: 2000px) {
+=======
+   } */
+   .menu {
+      display: flex;
+      width: 75px;
+      margin: 35px 0 0 35px;
+   }
+   .header {
+      display: none;
+   }
+   .biography {
+      width: 100%;
+      display: flex;
+      align-items: center;
+   }
+   .biography img:first-child {
+      width: 200px;
+      height: 300px;
+      margin: 50px 50px 0 50px;
+   }
+   .biography img {
+      width: 250px;
+      height: 200px;
+   }
+   .biography p {
+      font-size: 15px;
+   }
+   .biography h1 {
+      line-height: 1;
+   }
+   .biography div {
+      width: 35%;
+   }
+}
+
+@media screen and (min-width: 1451px) and (max-width: 2000px) {
+>>>>>>> main
    .wrapper {
       width: 100%;
       display: flex;
       flex-direction: column;
    }
+<<<<<<< HEAD
 
+=======
+   .menu {
+      width: 100px;
+      display: none;
+   }
+>>>>>>> main
    .header {
       width: 100%;
       height: 100px;
@@ -1506,7 +1664,11 @@ body {
    }
    .biography img {
       width: 450px;
+<<<<<<< HEAD
       margin: 100px 100px 0 0;
+=======
+      margin: 0 100px 0 0;
+>>>>>>> main
       height: 350px;
    }
    .biography div {
@@ -1543,8 +1705,12 @@ body {
    .bar1 {
       width: 100%;
       height: 300px;
+<<<<<<< HEAD
       hyphens: auto;
 
+=======
+      word-break: break-all;
+>>>>>>> main
       position: relative;
       left: -100%;
       box-shadow: 0 0 7px 0 black;
@@ -1564,15 +1730,23 @@ body {
       margin-left: 100px;
    }
    .bar1 p {
+<<<<<<< HEAD
       width: 60%;
+=======
+      width: 50%;
+>>>>>>> main
       line-height: 2;
       margin-left: 100px;
    }
    .bar2 {
       width: 100%;
       height: 300px;
+<<<<<<< HEAD
       hyphens: auto;
 
+=======
+      word-break: break-all;
+>>>>>>> main
       right: -100%;
       position: relative;
       display: flex;
@@ -1593,15 +1767,23 @@ body {
       position: absolute;
    }
    .bar2 p {
+<<<<<<< HEAD
       width: 63%;
+=======
+      width: 60%;
+>>>>>>> main
       line-height: 2;
       margin-left: 100px;
    }
    .bar3 {
       width: 100%;
       height: 300px;
+<<<<<<< HEAD
       hyphens: auto;
 
+=======
+      word-break: break-all;
+>>>>>>> main
       left: -100%;
       display: flex;
       position: relative;
