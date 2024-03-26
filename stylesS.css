@@ -6,20 +6,43 @@ body {
    font-size: 25px;
    text-align: center;
 }
-a {
-   width: 300px;
-   padding: 10px;
-   background-color: inherit;
-   border: none;
-   text-decoration: none;
-   text-align: center;
-   min-width: 900px;
 
-   color: black;
-   font-size: 25px;
-   box-shadow: 0 0 7px 0;
-   margin: 100px 0 100px 0;
+@media screen and (min-width: 1000px) and (max-width: 2000px) {
+   a {
+      width: 300px;
+      padding: 10px;
+      background-color: inherit;
+      border: none;
+      text-decoration: none;
+      text-align: center;
+      min-width: 900px;
+
+      color: black;
+      font-size: 25px;
+      box-shadow: 0 0 7px 0;
+      margin: 100px 0 100px 0;
+   }
+   p {
+      min-width: 900px;
+   }
 }
-p {
-   min-width: 900px;
+@media screen and (min-width: 1px) and (max-width: 1000px) {
+   a {
+      width: 300px;
+      padding: 10px;
+      background-color: inherit;
+      border: none;
+      text-decoration: none;
+      text-align: center;
+      min-width: 1px;
+
+      color: black;
+      font-size: 20px;
+      box-shadow: 0 0 7px 0;
+      margin: 15px 0 15px 0;
+   }
+   p {
+      font-size: 20px;
+      min-width: 1px;
+   }
 }
