@@ -2,13 +2,10 @@ const bars = document.querySelectorAll('#b'),
    containerForBars = document.querySelector('.scroll__bars'),
    info = document.querySelector('.info'),
    headerLinks = document.querySelectorAll('.header a[href^="#"]')
-<<<<<<< HEAD
 
 if (document.documentElement.clientWidth <= 1749) {
    bars.forEach((bar) => bar.classList.add('active'))
 }
-=======
->>>>>>> main
 
 const rect = containerForBars.getBoundingClientRect()
 if (scrollY > rect.top) {
