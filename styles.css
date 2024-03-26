@@ -1651,7 +1651,7 @@ body {
    }
 }
 
-@media screen and (min-width: 1px) and (max-width: 359px) {
+@media screen and (min-width: 270px) and (max-width: 359px) {
    .header {
       width: 100%;
       height: 75px;
@@ -2003,6 +2003,188 @@ body {
    ol {
       width: 50%;
       font-size: 12px;
+   }
+   .museum {
+      display: flex;
+      width: 100%;
+      align-items: center;
+   }
+}
+
+@media screen and (min-width: 1px) and (max-width: 269px) {
+   .header {
+      width: 100%;
+      height: 75px;
+      display: flex;
+      justify-content: space-around;
+      align-items: center;
+      box-shadow: 0 0 7px 0 black;
+   }
+   .header a {
+      background-color: inherit;
+      border: none;
+      text-align: center;
+      user-select: none;
+      text-decoration: none;
+      cursor: pointer;
+      font-size: 7px;
+
+      color: black;
+      padding: 3px;
+      width: 35px;
+      box-shadow: 0 0 7px 0 black;
+   }
+   .header a:first-child {
+      width: 60px;
+   }
+   .biography {
+      width: 100%;
+      display: flex;
+      align-items: center;
+      margin-bottom: 25px;
+   }
+   .biography img:first-child {
+      width: 70px;
+      height: 110px;
+      margin: 15px 10px 0 10px;
+   }
+   .biography img {
+      width: 110px;
+      height: 60px;
+      margin: 0 15px 0 15px;
+   }
+   .biography p {
+      font-size: 5px;
+      line-height: 1.5;
+   }
+   .biography h1 {
+      font-size: 7px;
+   }
+   .biography div {
+      width: 50%;
+      height: 150px;
+   }
+
+   .scroll__bars {
+      display: flex;
+      flex-direction: column;
+      align-items: center;
+   }
+
+   .bar1 {
+      width: 100%;
+      height: 90px;
+      hyphens: auto;
+
+      position: relative;
+      left: -100%;
+      box-shadow: 0 0 7px 0 black;
+      margin-bottom: 5px;
+      display: flex;
+      color: white;
+      background-color: rgb(74, 77, 255);
+      transition: all 0.5s ease-in;
+   }
+   .bar1.active {
+      left: 0;
+      transition: all 1s ease-in;
+   }
+   .bar1 img {
+      height: 100%;
+      width: 110px;
+      margin-left: 10px;
+   }
+   .bar1 p {
+      width: 65%;
+      font-size: 7px;
+      margin-left: 10px;
+   }
+   .bar2 {
+      width: 100%;
+      height: 90px;
+      hyphens: auto;
+      right: -100%;
+      position: relative;
+      display: flex;
+      background-color: rgb(255, 255, 255);
+      box-shadow: 0 0 7px 0;
+      margin-bottom: 5px;
+      transition: all 0.5s ease-in;
+   }
+   .bar2.active {
+      right: 0;
+      transition: all 1s ease-in;
+   }
+   .bar2 img {
+      height: 100%;
+      width: 120px;
+      right: 5px;
+      color: black;
+      position: absolute;
+   }
+   .bar2 p {
+      width: 48%;
+      margin: 5px 0 0 15px;
+      line-height: 1;
+      font-size: 7px;
+   }
+   .bar3 {
+      width: 100%;
+      height: 90px;
+
+      hyphens: auto;
+
+      left: -100%;
+      display: flex;
+      position: relative;
+      box-shadow: 0 0 7px 0 black;
+      background-color: rgb(47, 255, 92);
+      transition: all 0.5s ease-in;
+   }
+   .bar3.active {
+      left: 0;
+      transition: all 1s ease-in;
+   }
+   .bar3 img {
+      height: 100%;
+      width: 130px;
+      margin-left: 10px;
+   }
+   .bar3 p {
+      font-size: 7px;
+      margin-left: 10px;
+      line-height: 1.5;
+      width: 40%;
+   }
+   .info {
+      width: 100%;
+      height: 100px;
+      display: flex;
+      flex-direction: column;
+      margin-top: 25px;
+   }
+   .info p {
+      width: 60%;
+
+      margin-left: 15px;
+      font-size: 7px;
+   }
+   .info img {
+      width: 90px;
+      height: 90px;
+      margin: 0 10px 0 20px;
+   }
+   .info h1 {
+      font-size: 20px;
+      margin: 0 0 0 15px;
+   }
+   .info-about-F {
+      display: flex;
+   }
+   ol {
+      width: 50%;
+      padding: 25px;
+      font-size: 7px;
    }
    .museum {
       display: flex;
